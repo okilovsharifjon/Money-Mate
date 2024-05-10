@@ -52,7 +52,7 @@ namespace PresentationLayer.WebApi
         public async Task<IActionResult> GetByName([FromQuery] string name)
             => Ok(await _goalService.GetByNameAsync(name));
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromQuery] int id)
         {
             await _goalService.DeleteAsync(id);
             return Ok();

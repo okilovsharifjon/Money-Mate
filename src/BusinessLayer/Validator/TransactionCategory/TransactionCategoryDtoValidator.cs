@@ -7,7 +7,7 @@ namespace BusinessLayer.Validator.Transaction
         public TransactionCategoryDtoValidator()
         {
             RuleFor(prop => prop.UserId).NotEmpty();
-            RuleFor(prop => prop.Name).NotEmpty().MinimumLength(3).MinimumLength(50);
+            RuleFor(prop => prop.Name).NotEmpty().MinimumLength(3).MaximumLength(50);
         }
     }
 }

@@ -40,6 +40,7 @@ namespace PresentationLayer.WebApi
                 return BadRequest(ModelState);
             }
             await _userService.UpdateAsync(id, userDto);
+            string str = patchDocument.ToString();
 
             return Ok();
         }

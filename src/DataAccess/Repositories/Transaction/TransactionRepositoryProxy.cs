@@ -15,6 +15,7 @@ namespace DataAccess
         IDistributedCache _db = distributedCache;
 
         TransactionRepository _originRepository = transactionRepository;
+        
 
         public async Task<int> CreateAsync(Transaction transaction, CancellationToken token = default)
         {

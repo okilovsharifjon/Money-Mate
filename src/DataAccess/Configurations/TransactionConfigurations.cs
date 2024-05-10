@@ -42,7 +42,7 @@ namespace DataAccess
             builder
                 .Property(p => p.Time)
                 .HasColumnName("time")
-                .HasColumnType("TIMESTAMP")
+                .HasColumnType("TIMESTAMP WITH TIME ZONE")
                 .IsRequired();
 
             builder

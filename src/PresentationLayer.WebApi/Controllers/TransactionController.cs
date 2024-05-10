@@ -45,15 +45,12 @@ namespace PresentationLayer.WebApi
             return Ok();
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById([FromRoute] int id)
-        {
-            await _transactionService.GetByIdAsync(id);
-            return Ok();
-        }
+            => Ok(await _transactionService.GetByIdAsync(id));
 
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromQuery] int id)
         {
             await _transactionService.DeleteAsync(id);
             return Ok();

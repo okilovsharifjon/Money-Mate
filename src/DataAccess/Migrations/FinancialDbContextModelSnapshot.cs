@@ -116,7 +116,7 @@ namespace DataAccess.Migrations
                         .HasColumnName("description");
 
                     b.Property<DateTime>("Time")
-                        .HasColumnType("TIMESTAMP")
+                        .HasColumnType("TIMESTAMP WITH TIME ZONE")
                         .HasColumnName("time");
 
                     b.Property<string>("Type")

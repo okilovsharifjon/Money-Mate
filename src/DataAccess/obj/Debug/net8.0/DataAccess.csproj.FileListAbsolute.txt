@@ -98,3 +98,4 @@ E:\Books\Projects\MoneyMate\src\DataAccess\obj\Debug\net8.0\refint\DataAccess.dl
 E:\Books\Projects\MoneyMate\src\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 E:\Books\Projects\MoneyMate\src\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
 E:\Books\Projects\MoneyMate\src\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
+E:\Books\Projects\MoneyMate\src\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json

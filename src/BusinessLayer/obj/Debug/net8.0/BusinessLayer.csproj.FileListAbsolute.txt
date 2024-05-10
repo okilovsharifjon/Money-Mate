@@ -16,3 +16,4 @@ E:\Books\Projects\MoneyMate\src\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
 E:\Books\Projects\MoneyMate\src\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 E:\Books\Projects\MoneyMate\src\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 E:\Books\Projects\MoneyMate\src\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+E:\Books\Projects\MoneyMate\src\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json

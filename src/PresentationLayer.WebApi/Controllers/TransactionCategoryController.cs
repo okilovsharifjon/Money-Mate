@@ -34,13 +34,10 @@ namespace PresentationLayer.WebApi
 
         [HttpGet]
         public async Task<IActionResult> GetById([FromRoute] int id)
-        {
-            await _transactionCategoryService.GetByIdAsync(id);
-            return Ok();
-        }
+            => Ok(await _transactionCategoryService.GetByIdAsync(id));
 
         [HttpDelete]
-        public async Task<IActionResult> Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromQuery] int id)
         {
             await _transactionCategoryService.DeleteAsync(id);
             return Ok();

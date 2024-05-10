@@ -8,7 +8,7 @@ namespace DataAccess
 {
     public enum TransactionType
     {
-        Income,
-        Expense
+        Expense = 1,
+        Income = 2
     }
 }

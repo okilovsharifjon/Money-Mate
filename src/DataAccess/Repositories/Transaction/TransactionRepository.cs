@@ -10,10 +10,11 @@ namespace DataAccess
     public class TransactionRepository(FinancialDbContext dbContext) : ITransactionRepository
     {
         private readonly FinancialDbContext _db = dbContext;
-
+        
         public async Task<int> CreateAsync(Transaction transaction, CancellationToken token = default)
         {
-            transaction.Time = DateTime.Now;
+
+            transaction.Time.ToUniversalTime();
             await _db.Transactions.AddAsync(transaction, token);
             await _db.SaveChangesAsync(token);
             return transaction.Id;
